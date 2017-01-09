@@ -2,6 +2,6 @@
 
 const Client = require('./lib/client')
 
-exports.createClient = function (optuons) {
+exports.createClient = function (options) {
   return new Client(options)
 }

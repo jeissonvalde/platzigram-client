@@ -1,6 +1,6 @@
 'use strict'
 
-import uuid from 'uuid-base62'
+const uuid = require('uuid-base62')
 
 const fixtures = {
   getImage () {
@@ -12,7 +12,7 @@ const fixtures = {
       likes: 0,
       liked: false,
       userId: uuid.uuid(),
-      publicId: uuid.encoded(id),
+      publicId: uuid.encode(id),
       id: id,
       createdAt: new Date().toString()
     }
@@ -37,4 +37,4 @@ const fixtures = {
   }
 }
 
-module.export = fixtures
+module.exports = fixtures
